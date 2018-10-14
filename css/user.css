@@ -1,0 +1,77 @@
+.user__wrapper{
+  display: grid;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.login__wrapper{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-self: center;
+  justify-self: center;
+  /* ALIGN SELF NOT WORKING :L */
+  /* align-self: center; */
+
+
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.login__image{
+  background: url(../img/login.jpg);
+  background-repeat: no-repeat;
+  width: 520px;
+  height: 410px;
+}
+
+.register__image{
+  background: url(../img/register.jpg);
+  background-size: cover;
+  width: 520px;
+  height: 410px;
+}
+
+.login__form{
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  grid-gap: 45px;
+  padding: 15px 60px;
+  align-content: center;
+  background: #fff;
+}
+
+.login__form__header{
+  font-size: 2rem;
+  justify-self: center;
+  color: #5b5a5a;
+}
+
+.login__form__inputs{
+  display: grid;
+  grid-gap: 15px;
+  width: 50%;
+  justify-self: center;
+}
+.login__form__inputs{
+  width: 100%;
+}
+
+.login__form input[type=text], .login__form input[type=password]{
+  /* border: 1px solid #707070; */
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+  padding: 12px;
+}
+
+.login__form__submit{
+  justify-self: center;
+}
+
+.login__form__text{
+  justify-self: center;
+}
+
+.login__form__text a{
+  color: #200950;
+}

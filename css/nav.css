@@ -1,0 +1,169 @@
+body, html {
+  font-family: 'Roboto';
+  /* height: 100%; */
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav__links a:hover{
+  color: #f71f3e;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  padding: 10px 0;
+  /* color: #f71f3e; */
+  color: #333;
+
+  width: 100%;
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+  /* box-shadow: 0px 15px 10px -15px #111; */
+
+  margin: 0 auto;
+}
+
+.nav__logo{
+  /* background: #eee; */
+  font-size: 30px;
+  justify-self: center;
+}
+
+.nav__links{
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 20px;
+  font-size: 16px;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-items: center;
+}
+
+/* .logout button{
+  border: none;
+  outline: 0;
+  background: 0;
+  cursor: pointer;
+} */
+
+.fa-power-off{
+  color: #e64d53;
+  font-size: 1.2rem ;
+  /*padding-left: 5px;*/
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-items{
+  /* display: none;
+  position: absolute;
+  background-color: #db5654;
+  border: 1px solid #fff;
+  min-width: 100px;;
+  z-index: 1;
+  padding: 10px;
+  right: 0; */
+  border: 1px solid #f4f4f4;
+
+  border-radius: 3px;
+  background-color: #fafafa;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+  /* the magic */
+  position: absolute;
+  top: 12px;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  width: 120px;
+  transition: all 0.25s ease-out;
+  right: 0;
+}
+
+.items__login{
+  border-bottom: 1px solid #333;
+}
+
+.dropdown-items a{
+  color: #333;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.dropdown-items a:hover {
+  color: #333;
+}
+
+.dropdown:hover .dropdown-items {
+  display: grid;
+  margin-top: 5px;
+  grid-gap: 10px;
+  color: #fff;
+
+  top: 28px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-items:first{
+  border-bottom: 1px solid #fff;
+}
+
+.nav__cart{
+  cursor: pointer;
+}
+
+.bsk a{
+  font-size: 1.1rem;
+}
+
+.bars{
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 5px 15px;
+  font-size: 1.6rem;
+}
+
+.nav__links i{
+  }
+
+@media only screen and (min-width: 768px) {
+
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .nav__logo{
+    justify-self: start;
+  }
+
+
+  .nav__links{
+    grid-template-columns: repeat(5, max-content);
+
+    /* font-size: 20px; */
+    font-size: 1rem;
+
+    /* text-transform: uppercase; */
+
+  }
+  .nav__links i{
+    font-size: 1.4rem;
+  }
+
+
+
+ }

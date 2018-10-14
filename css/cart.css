@@ -1,0 +1,58 @@
+.display__basket{
+  padding: 20px 70px;
+  background: #fcfcfc;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height: max-content;
+}
+
+.display__basket__content{
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-gap: 5px;
+}
+
+.display__basket__th{
+  border-bottom: 1px solid;
+  padding: 15px 0;
+}
+
+.display__basket__row{
+  padding: 5px 0;
+}
+
+.display__basket__th, .display__basket__row{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: start;
+}
+
+.basket__button{
+  display: grid;
+}
+.basket__button a{
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1600px) {
+
+}

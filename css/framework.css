@@ -1,0 +1,173 @@
+/* Inputs */
+
+input[type=text], input[type=password], input[type=time], input[type=date], select {
+  padding: 12px 15px;
+  font-size: 1.07rem;
+  border-radius: 2px;
+  border: 1px solid #d2d2d2;
+}
+
+/* Buttons */
+
+.submit{
+  background: #FE5F55;
+  border: 1px solid #FE5F55;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+
+  text-transform: uppercase;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+  }
+
+.submit:hover{
+  background: #d4463d;
+  /* background: red; */
+}
+
+.btn{
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+.xl{
+  padding: 13px 25px;
+}
+
+.btno{
+  border: 1px solid #F56060;
+  background: #fff;
+  color: #F56060;
+}
+
+.btno:hover{
+  background: #F56060;
+  color: #fff;
+}
+
+.btng{
+  border: 1px solid #66b664;
+  background: #fff;
+  color: #66b664;
+}
+
+.btng:hover{
+  background: #66b664;
+  color: #fff;
+}
+
+
+.red{
+  /* background: #FE5F55; */
+  background: #EE2A49;
+  color: #fff;
+}
+.blue{
+  background: #1D6AA9;
+  color: #fff;
+}
+.green{
+  background: #39a356;
+  color: #fff;
+}
+
+.primary{
+  background: #F56060;
+  color: #fff;
+}
+
+.prime{
+  color: #F56060;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.primary:hover{
+  background: #cd3535;
+}
+
+
+
+.page__title{
+  margin-top: 30px; /* I CREATE PROBLEMS - WHY DID I DO THIS?*/
+  margin-bottom: 30px; /* I CREATE PROBLEMS - WHY DID I DO THIS?*/
+  font-size: 36px;
+  color: #707070;
+}
+
+.sub__title{
+  margin-top: 30px; /* I CREATE PROBLEMS - WHY DID I DO THIS?*/
+  margin-bottom: 30px; /* I CREATE PROBLEMS - WHY DID I DO THIS?*/
+  font-size: 24px;
+  color: #707070;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal__content{
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:openModal;
+  animation-duration: 0.5s;
+}
+
+.modal__header{
+  background: #F56060;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.modal__header h2{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal__exit{
+  color: #fff;
+  font-size: 30px;
+  float: right;
+}
+.modal__exit:hover, .modal__exit:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__body{
+  padding: 15px;
+}
+@keyframes openModal {
+  from{ opacity: 0.5}
+  to{ opacity: 1}
+}
+
+
+/* #0fb161 */
